@@ -1,4 +1,4 @@
-# guj-char-counter
+# Gujarati Character Counter
 
 A lightweight Gujarati character counter built for print, typography, and content estimation. It counts user-perceived characters (grapheme clusters) while applying Gujarati-specific rules around half letters, matras, and special signs.
 
