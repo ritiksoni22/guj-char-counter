@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Character Counter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <main class="shell">
+        <header class="fade-in">
+            <p class="brand">Soni Graphics</p>
+            <h1>Character Counter</h1>
+            <p class="subtitle">Counts grapheme clusters, ignoring spaces, symbols, and punctuation. Tuned for
+                Gujaratiand other scripts.</p>
+        </header>
+
+        <section class="layout">
+            <div class="panel fade-in">
+                <label class="hint" for="inputText">Paste or type your text below</label>
+                <textarea id="inputText" placeholder="Paste Gujarati or any text here"></textarea>
+                <div class="actions"><button onclick="countCharacters()">Count Characters</button></div>
+                <div class="stat-card">
+                    <p class="stat-title">Rules Applied</p>
+                    <div class="chips">
+                        <span class="chip keep">Count letters</span>
+                        <span class="chip keep">Count half letters</span>
+                        <span class="chip keep">Count numbers</span>
+                        <span class="chip ignore">Ignore spaces</span>
+                        <span class="chip ignore">Ignore punctuation . ,</span>
+                        <span class="chip ignore">Ignore symbols ( : / )</span>
+                        <span class="chip ignore">Ignore half 'ર'</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats stagger">
+                <div class="stat-card">
+                    <p class="stat-title">Character Count</p>
+                    <p id="result">—</p>
+                </div>
+                <div class="stat-card">
+                    <p class="stat-title">Counted Units</p>
+                    <p id="debug">---</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-note">
+        Implemented using AI | Perfected by Human (Ritik Soni) | Owned by (Soni Graphics)
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
